@@ -13,6 +13,9 @@ export const Intro = () => {
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
         </ul>
+        <h1 className="text-3xl font-bold underline to-blue-700">
+      Hello world!
+    </h1>
     </nav>
   )
 }
