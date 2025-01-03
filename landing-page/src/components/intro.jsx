@@ -7,15 +7,14 @@ import '../assets/Intro.css';
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export const Intro = () => {
-  const arrowRef = useRef(null); // Ref for arrow button
-  const scrollDistRef = useRef(null); // Ref for scroll distance trigger
+  const arrowRef = useRef(null); 
+  const scrollDistRef = useRef(null); 
 
   useEffect(() => {
-    // GSAP ScrollTrigger Timeline
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: scrollDistRef.current, // Use ref instead of selector
+          trigger: scrollDistRef.current, 
           start: '0 0',
           end: '100% 100%',
           scrub: 1,
@@ -29,8 +28,8 @@ export const Intro = () => {
       .fromTo('.mountMg', { y: -30 }, { y: -250 }, 0)
       .fromTo('.mountFg', { y: -50 }, { y: -600 }, 0);
 
-    // Arrow Button Animations
-    const arrowBtn = arrowRef.current; // Use ref instead of querySelector
+   
+    const arrowBtn = arrowRef.current; 
 
     const mouseEnterHandler = () => {
       gsap.to('.arrow', { y: 10, duration: 0.8, ease: 'back.inOut(3)', overwrite: 'auto' });
@@ -44,12 +43,12 @@ export const Intro = () => {
       gsap.to(window, { scrollTo: window.innerHeight, duration: 1.5, ease: 'power1.inOut' });
     };
 
-    // Add event listeners
+    
     arrowBtn.addEventListener('mouseenter', mouseEnterHandler);
     arrowBtn.addEventListener('mouseleave', mouseLeaveHandler);
     arrowBtn.addEventListener('click', clickHandler);
 
-    // Cleanup event listeners on component unmount
+    
     return () => {
       arrowBtn.removeEventListener('mouseenter', mouseEnterHandler);
       arrowBtn.removeEventListener('mouseleave', mouseLeaveHandler);
@@ -132,7 +131,7 @@ export const Intro = () => {
           </g>
 
           <rect
-            ref={arrowRef} // Attach ref to the arrow button
+            ref={arrowRef}
             width="100"
             height="100"
             opacity="0"
