@@ -1,0 +1,18 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #2a2a2a;
+    padding: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #ccc;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: white;
+}

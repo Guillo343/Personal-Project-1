@@ -1,10 +1,14 @@
+import { Header } from "./components/Header"
+import { MainContent } from "./components/MainContent"
+import { SocialLinks } from "./components/SocialLinks"
+
 function App() {
 
   return (
     <>      
-      <div>
-        <p>hola buenas</p>
-      </div>
+      <Header></Header>
+      <MainContent></MainContent>
+      <SocialLinks></SocialLinks>
     </>
   )
 }

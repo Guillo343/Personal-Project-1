@@ -1,0 +1,38 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #1a1a1a;
+    color: white;
+}
+.text-content {
+    max-width: 50%;
+}
+.text-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.text-content p{
+    margin: 10px 0;
+}
+
+.text-content .price {
+    font-size: 24px;
+    color: #ffae42;
+    font-weight: bold;
+}
+
+.size-options button{
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.size-options button:hover {
+    background-color: #f14b09;
+    transition: .25s ease;
+}
