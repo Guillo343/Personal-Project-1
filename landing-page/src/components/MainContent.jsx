@@ -13,7 +13,7 @@ export const MainContent = () => {
                 <button>Medium</button>
                 <button>Large</button>
             </div>
-            <button add-to-cart>Add To Cart</button>
+            <button add-to-cart className='cart'>Add To Cart</button>
         </div>
         <div className="image-content">
             <div className="product-image">

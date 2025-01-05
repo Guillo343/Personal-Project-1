@@ -36,3 +36,6 @@
     background-color: #f14b09;
     transition: .25s ease;
 }
+.text-content .cart {
+    margin-top: 25px;
+}
