@@ -6,9 +6,9 @@ export const Header = () => {
    <div className='header'>
     <span className='brand'><a href="#">Brand</a></span>
     <nav className='nav-menu'>
-        <a href="#">Cosmetics</a>
+        <a href="#">Suits</a>
         <a href="#">Shoes</a>
-        <a href="#">Jewelleries</a>
+        <a href="#">Accessories</a>
     </nav>
    </div>
   )

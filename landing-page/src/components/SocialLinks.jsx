@@ -7,7 +7,7 @@ export const SocialLinks = () => {
         <a href="#">f</a>
         <a href="#">i</a>
         <a href="#">t</a>
-        <a href="#">in</a>
+        <a href="#">ln</a>
     </div>
   )
 }
